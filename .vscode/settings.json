@@ -1,5 +1,8 @@
 {
+
+
     "python.pythonPath": "/home/venv/bin/python",
+
     "editor.fontFamily": "'JetBrains Mono', Consolas, 'Courier New', monospace",
     "editor.fontSize": 15,
     "terminal.integrated.fontFamily": "'JetBrains Mono', Consolas, 'Courier New', monospace",
