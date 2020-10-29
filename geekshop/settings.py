@@ -37,7 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'mainapp', 'authnapp'
+    'mainapp',
+    'authnapp', 
+    'basketapp',
+    'adminapp',
 ]
 
 # Auth model
@@ -132,3 +135,6 @@ MEDIA_URL = '/media/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
+# Set login path:
+#   https://docs.djangoproject.com/en/2.2/ref/settings/#login-url
+LOGIN_URL = "authnapp:login"
