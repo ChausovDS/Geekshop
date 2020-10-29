@@ -1,6 +1,7 @@
 {
 
 
+
     "python.pythonPath": "/home/venv/bin/python",
 
     "editor.fontFamily": "'JetBrains Mono', Consolas, 'Courier New', monospace",
@@ -19,4 +20,5 @@
         "--load-plugins",
         "pylint_django"
     ]
+
 }

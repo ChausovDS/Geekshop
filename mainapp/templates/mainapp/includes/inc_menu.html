@@ -1,4 +1,6 @@
+
 <a href="{% url 'main' %}" class="logo"></a>
+
 <ul class="menu">
     <li>
         <a href="{% url 'main' %}" class="{% if request.resolver_match.url_name == 'main' %}active{% endif %}">
@@ -6,8 +8,10 @@
         </a>
     </li>
     <li>
+
         <a href="{% url 'products:index' %}"
             class="{% if request.resolver_match.namespace == 'products' %}active{% endif %}">
+
             продукты
         </a>
     </li>
@@ -16,6 +20,7 @@
             контакты
         </a>
     </li>
+
     {% if user.is_authenticated %}
     <li>
         <a href="{% url 'auth:edit' %}">
@@ -41,3 +46,4 @@
 
     </span>
 </a>
+r
