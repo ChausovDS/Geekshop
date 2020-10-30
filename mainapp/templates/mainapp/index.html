@@ -3,6 +3,7 @@
 {% load staticfiles %}
 
 
+
 {% block menu %}
 <div class="slider">
     <div class="header clearfix">
@@ -27,6 +28,7 @@
 {% endblock %}
 
 
+
 {% block content %}
 <div class="featured">
     <div class="featured-menu">
@@ -38,11 +40,13 @@
     <div class="tab-content">
         {% for product in products %}
         <div class="block">
+
             <a href="{{ product.image }}"><img src="{{ media_url }}{{ product.image }}" alt="{{ product.short_desc }}">
                 <div class="text">
                     <img src="{% static 'img/icon-hover.png' %}" alt="img">
                     <h4>{{ product.name }}</h4>
                     <p>Описание: {{ product.description }} </p>
+
                 </div>
             </a>
         </div>
