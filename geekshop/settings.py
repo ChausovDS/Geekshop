@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'authnapp', 
     'basketapp',
     'adminapp',
+]
 
 
 # Auth model
@@ -139,3 +140,6 @@ MEDIA_URL = "/media/"
 #   https://docs.djangoproject.com/en/2.2/ref/settings/#login-url
 LOGIN_URL = "authnapp:login"
 
+# Set login path:
+#   https://docs.djangoproject.com/en/2.2/ref/settings/#login-url
+LOGIN_URL = "authnapp:login"

@@ -12,3 +12,5 @@ urlpatterns = [
 
     path("remove/<int:pk>/", basketapp.basket_remove, name="remove"),
     path("edit/<int:pk>/<int:quantity>/", basketapp.basket_edit, name="edit"),
+]
+

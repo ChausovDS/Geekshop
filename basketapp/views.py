@@ -5,11 +5,8 @@ from django.http import JsonResponse
 from django.shortcuts import HttpResponseRedirect, get_object_or_404, render
 from django.template.loader import render_to_string
 from django.urls import reverse
-
-
 from basketapp.models import Basket
 from mainapp.models import Product
-
 
 
 @login_required
@@ -62,6 +59,7 @@ def basket_edit(request, pk, quantity):
         content = {"basket_items": basket_items, "media_url": settings.MEDIA_URL}
 
         result = render_to_string("basketapp/includes/inc_basket_list.html", content)
+
 
         return JsonResponse({"result": result})
 
